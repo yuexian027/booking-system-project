@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb0d6e7-d951-4d6c-847d-72f335f5955e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/HelloWorldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/backend">
@@ -24,6 +30,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/backend">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -63,7 +72,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle " />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.backend">
     <configuration name="BookingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pivottech.booking.BookingApplication" />
       <module name="booking.main" />
@@ -77,8 +91,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="backend" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/backend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.backend" />
         <item itemvalue="Application.BookingApplication" />
       </list>
     </recent_temporary>
@@ -93,5 +127,16 @@
       <updated>1637806366626</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

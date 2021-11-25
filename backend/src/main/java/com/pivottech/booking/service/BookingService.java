@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -25,15 +26,20 @@ public class BookingService {
     }
 
     public boolean deleteReservation(Integer id) {
-        Optional<Reservation> toDelete = this.reservations.stream().filter(r -> r.getId().equals(id)).findFirst();
-        if (toDelete.isEmpty()) {
+        Reservation toDelete = getReservationById(id);
+        if (toDelete == null) {
             return false;
         }
-        this.reservations.remove(toDelete.get());
+        this.reservations.remove(toDelete);
         return true;
     }
-    public List<Reservation> getReservations() {
-        return this.reservations;
+    public List<Reservation> getReservations(int limit) {
+        return this.reservations.stream().limit(limit).collect(Collectors.toList());
+    }
+
+    public Reservation getReservationById(Integer id) {
+        Optional<Reservation> resv = this.reservations.stream().filter(r -> r.getId().equals(id)).findFirst();
+        return resv.orElse(null);
     }
 
 
