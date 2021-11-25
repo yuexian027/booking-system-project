@@ -23,6 +23,7 @@ public class StudentController {
         //code
 
         classroom1.addStudent(student);
+        System.out.println(student.getCity());
         return student;
     }
 

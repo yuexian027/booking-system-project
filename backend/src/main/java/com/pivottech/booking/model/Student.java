@@ -13,7 +13,9 @@ public class Student {
     public int age;
 
     private String city;
-
+    public String getCity() {
+        return city;
+    }
 
     public Student() {}
 
