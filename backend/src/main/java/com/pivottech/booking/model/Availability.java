@@ -1,4 +1,4 @@
 package com.pivottech.booking.model;
 
-public class Student {
+public class Availability {
 }
