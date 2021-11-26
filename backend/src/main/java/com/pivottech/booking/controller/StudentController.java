@@ -12,8 +12,8 @@ public class StudentController {
     private Classroom classroom1 = new Classroom();
     @CrossOrigin(origins = "*")
     @GetMapping("/hellotime")
-    public String greeting(@RequestParam(value = "name", defaultValue = "World") String name1,
-                           @RequestParam(value = "age", defaultValue = "0") int age) {
+    public String greeting(@RequestParam(name = "name", defaultValue = "World") String name1,
+                           @RequestParam(name = "age", defaultValue = "0") int age) {
         LocalTime lt = LocalTime.now();
         String ret = String.format("hello %s, age: %d, now is %s", name1, age, lt.toString());
         return ret;

@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb0d6e7-d951-4d6c-847d-72f335f5955e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/HelloWorldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,16 +71,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle " />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.backend">
+  <component name="RunManager" selected="Application.BookingApplication">
     <configuration name="BookingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pivottech.booking.BookingApplication" />
       <module name="booking.main" />

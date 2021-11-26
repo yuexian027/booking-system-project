@@ -8,16 +8,27 @@
 //
 //import static org.junit.jupiter.api.Assertions.*;
 //import org.junit.jupiter.api.extension.ExtendWith;
+//import com.pivottech.booking.repository.ReservationRepository;
 //import org.mockito.Mock;
+//import org.mockito.Mockito;
 //import org.mockito.junit.jupiter.MockitoExtension;
 //
+//import javax.persistence.MapKeyColumn;
+//
+//import static org.junit.jupiter.api.Assertions.*;
+//
+//@ExtendWith(MockitoExtension.class)
 //class BookingServiceTest {
+//    @Mock
+//    ReservationRepository mockReservationRepository;
 //
 //    BookingService service;
 //
+//
+//
 //    @BeforeEach
 //    void setUp() {
-//        service = new BookingService();
+//        service = new BookingService(mockReservationRepository);
 //        service.createReservation(
 //                Reservation.builder()
 //                        .description("initial reservation")
@@ -50,7 +61,7 @@
 //    //这个test前面也会有小箭头 这里测试的是service的delete的这个method
 //    @Test
 //    void deleteReservation() {
-//        service.deleteReservation(0);
+//        service.deleteReservation(0L);
 //        assertEquals(0, service.getReservations().size());
 //    }
 //
