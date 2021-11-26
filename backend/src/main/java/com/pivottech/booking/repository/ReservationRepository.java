@@ -1,9 +1,25 @@
 package com.pivottech.booking.repository;
+
 import com.pivottech.booking.model.Reservation;
-import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 public interface ReservationRepository extends PagingAndSortingRepository<Reservation, Long> {
     Page<Reservation> findByDescriptionContaining(String terms, Pageable pageable);
+
+    @Query(
+            value = "SELECT r from Reservation r where r.student.id = : student_id AND" +
+                    "r.utcStartTime >= : from AND r.utcEndTime < : to"
+    )
+    List<Reservation> findByUssernameAndBetween(
+            @Param("student_id") Long studentId,
+            @Param("from") LocalDateTime from,
+            @Param("to") LocalDateTime to
+    );
 }
