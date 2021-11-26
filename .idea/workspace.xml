@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fbb0d6e7-d951-4d6c-847d-72f335f5955e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Availability.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Availability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -131,6 +134,17 @@
       <updated>1637806366626</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

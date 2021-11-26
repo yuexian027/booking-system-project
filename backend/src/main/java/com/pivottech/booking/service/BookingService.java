@@ -2,23 +2,44 @@ package com.pivottech.booking.service;
 
 //import antlr.StringUtils;
 
+import com.pivottech.booking.model.Availability;
 import com.pivottech.booking.model.Reservation;
+import com.pivottech.booking.model.Student;
+import com.pivottech.booking.model.Instructor;
+import com.pivottech.booking.repository.AvailabilityRepository;
 import com.pivottech.booking.repository.ReservationRepository;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class BookingService {
 
-    final static int DEFAULT_PAGE_SIZE = 50;
+    @Autowired
+    ReservationRepository reservationRepository;
+    @Autowired
+    AvailabilityRepository availabilityRepository;
 
 
-    private final ReservationRepository reservations;
+    @Transactional
+    public Reservation createReservation(Student student, Availability availability, String description) {
+        Reservation toBeCreated = Reservation.builder()
+                .description(description)
+                .student(student)
+                .utcStartTime(availability.getUtcStartTime())
+                .utcEndTime(availability.getUtcEndTime())
+                .availabilitities(List.of(availability))
+                .build();
+        Reservation saved = reservationRepository.save(toBeCreated);
+        availability.setReservation(saved);
+        availabilityRepository.save(availability);
+    }
 
     public BookingService(ReservationRepository reservations) {
             this.reservations = reservations;
