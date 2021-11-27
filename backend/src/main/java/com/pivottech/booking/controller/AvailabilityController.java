@@ -1,14 +1,16 @@
 package com.pivottech.booking.controller;
 
 
+import com.pivottech.booking.model.Availability;
+import com.pivottech.booking.model.User;
 import com.pivottech.booking.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.Valid;
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @RestController
@@ -37,7 +39,7 @@ public class AvailabilityController {
     @PostMapping("")
     public Iterable<Availability> create(
             @PathVariable("username") String username,
-            @Valid @RequestBody CreateAvailabilityRequest request)
+            @Valid @RequestBody CreateAvailabilityRequest request
     ){
        User user = userService.getUserByUsername(username);
        if (user == null || user.getInstructor() == null) {

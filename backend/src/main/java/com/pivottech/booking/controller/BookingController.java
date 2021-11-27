@@ -2,12 +2,13 @@ package com.pivottech.booking.controller;
 
 import com.pivottech.booking.model.Reservation;
 import com.pivottech.booking.service.BookingService;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 import org.springframework.data.domain.PageRequest;
-import javax.validation.Valid;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
 @RestController
@@ -28,7 +29,7 @@ public class BookingController {
         Pageable pageable = PageRequest.ofSize(limit > 0 ? limit : DEFAULT_PAGE_SIZE);
         return bookingService.getReservations(pageable, searchTerms);
     }
-
+/*
     @GetMapping("/{id}")
     public Reservation getById(@PathVariable("id")  long id) {
         Reservation resv = this.bookingService.getReservationById(id);
@@ -38,17 +39,23 @@ public class BookingController {
         return resv;
     }
 
+ */
+/*
     @PostMapping("/")
         public Reservation create(@Valid @RequestBody Reservation reservation) {
             this.bookingService.createReservation(reservation);
             return reservation;
         }
 
+ */
+/*
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") long id) {
         if (!this.bookingService.deleteReservation(id)) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
     }
+
+ */
 
 }

@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fbb0d6e7-d951-4d6c-847d-72f335f5955e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/AvailabilityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/AvailabilityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/AvailabilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/AvailabilityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/ReservationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

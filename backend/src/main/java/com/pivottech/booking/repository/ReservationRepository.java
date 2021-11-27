@@ -17,7 +17,7 @@ public interface ReservationRepository extends PagingAndSortingRepository<Reserv
             value = "SELECT r from Reservation r where r.student.id = : student_id AND" +
                     "r.utcStartTime >= : from AND r.utcEndTime < : to"
     )
-    List<Reservation> findByUssernameAndBetween(
+    List<Reservation> findByUsernameAndBetween(
             @Param("student_id") Long studentId,
             @Param("from") LocalDateTime from,
             @Param("to") LocalDateTime to
