@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping("{username}/availabilities")
 public class AvailabilityController {
-
+//
     @Autowired
     BookingService bookingService;
 
