@@ -7,10 +7,16 @@
     <list default="true" id="fbb0d6e7-d951-4d6c-847d-72f335f5955e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/AvailabilityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/AvailabilityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Availability.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Availability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Instructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/AvailabilityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/AvailabilityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/repository/ReservationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,14 +152,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/BookingApplication.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/pivottech/booking/controller/ReservationController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

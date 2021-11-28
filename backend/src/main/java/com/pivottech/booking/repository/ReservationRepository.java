@@ -14,8 +14,8 @@ public interface ReservationRepository extends PagingAndSortingRepository<Reserv
     Page<Reservation> findByDescriptionContaining(String terms, Pageable pageable);
 
     @Query(
-            value = "SELECT r from Reservation r where r.student.id = : student_id AND" +
-                    "r.utcStartTime >= : from AND r.utcEndTime < : to"
+            value = "SELECT r from Reservation r WHERE r.student.id = :student_id AND " +
+                    "r.utcStartTime >= :from AND r.utcEndTime < :to"
     )
     List<Reservation> findByUsernameAndBetween(
             @Param("student_id") Long studentId,

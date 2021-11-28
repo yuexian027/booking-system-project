@@ -30,10 +30,16 @@ public class Availability {
 
     @NotNull
     LocalDateTime utcEndTime;
+//    @NotNull
+//    @JsonFormat(pattern="yyyy-MM-dd HH:mm")
+//    LocalDateTime utcStartTime;
+//
+//    @NotNull
+//    @JsonFormat(pattern="yyyy-MM-dd HH:mm")
+//    LocalDateTime utcEndTime;
 
     @ManyToOne
     @JoinColumn(name = "instructor_id")
-
     @NotNull
     Instructor instructor;
 

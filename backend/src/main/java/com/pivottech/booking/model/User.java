@@ -6,7 +6,7 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 
-@Entity(name = "USer")
+@Entity(name = "User")
 @Data
 @Table(indexes = {
         @Index(name = "username_index", columnList = "username", unique = true)

@@ -1,5 +1,6 @@
 package com.pivottech.booking.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
@@ -22,11 +23,13 @@ import java.util.List;
 @Data
 @Builder()
 @AllArgsConstructor
+@NoArgsConstructor
 public class Reservation {
+    String description;
 
-   String description;
-
-    @Setter(AccessLevel.NONE)
+   @Id
+   @GeneratedValue(strategy = GenerationType.AUTO)
+   @Setter(AccessLevel.NONE)
     Long id;
 
     @OneToMany(mappedBy = "reservation")
@@ -34,14 +37,15 @@ public class Reservation {
     List<Availability> availabilities;
 
     @NotNull
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm")
     LocalDateTime utcStartTime;
 
     @NotNull
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm")
     LocalDateTime utcEndTime;
 
     @ManyToOne
     @JoinColumn(name = "student_id")
-
     @NotNull
     Student student;
 

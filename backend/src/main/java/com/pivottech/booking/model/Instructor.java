@@ -7,7 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "Instructor")
 @Data
 public class Instructor {
     @Id

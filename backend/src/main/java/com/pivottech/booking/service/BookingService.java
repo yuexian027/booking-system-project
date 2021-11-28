@@ -102,6 +102,10 @@ public class BookingService {
         return page.toList();
     }
 
+    public Reservation getReservationById(long id) {
+        return null;
+    }
+
 
 //    public boolean deleteReservation(Long id) {
 //        Reservation toDelete = getReservationById(id);
